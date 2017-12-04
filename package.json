@@ -1,22 +1,26 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-react-barebones",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A minimal Electron with React application",
   "main": "main.js",
   "scripts": {
+    "build": "webpack",
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Dan Veenkamp",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-webpack-alias": "^2.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "electron": "^1.7.9",
+    "webpack": "^3.9.1"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "redux": "^3.7.2"
   }
 }
